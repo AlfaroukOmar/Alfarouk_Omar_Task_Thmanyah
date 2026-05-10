@@ -38,5 +38,4 @@ dependencies {
     testImplementation(libs.mockk)
     testImplementation(libs.kotlinx.coroutines.test)
     testImplementation(libs.kotlinx.serialization.json)
-//    testImplementation(project(":core:fixtures"))
 }
