@@ -41,7 +41,7 @@ object ContentItemSamples {
         durationSeconds: Long? = 1380L,
         audioUrl: String? = null,
         releaseDate: LocalDate? = LocalDate(2026, 5, 9),
-        podcastName: String? = "شبكة راديو ثندر",
+        podcastName: String? = "شبكة راديو ثمانيه",
         authorName: String? = null,
     ): ContentItem.Episode = ContentItem.Episode(
         id = id,
