@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="settings_title">Settings</string>
+    <string name="settings_back_cd">Back</string>
+    <string name="settings_theme_section">Appearance</string>
+    <string name="settings_theme_description">Choose how Thmanyah looks on this device.</string>
+    <string name="settings_theme_system">System</string>
+    <string name="settings_theme_light">Light</string>
+    <string name="settings_theme_dark">Dark</string>
+    <string name="settings_language_section">Language</string>
+    <string name="settings_language_description">All on-screen copy will follow your selection.</string>
+    <string name="settings_language_ar_title">العربية</string>
+    <string name="settings_language_ar_subtitle">Arabic content and layout</string>
+    <string name="settings_language_en_title">English</string>
+    <string name="settings_language_en_subtitle">English interface</string>
+    <string name="settings_about_section">About</string>
+    <string name="settings_about_app_name">Thmanyah sample</string>
+    <string name="settings_about_body">Arabic-first discovery sample built with Compose, Hilt, and DataStore.</string>
+    <string name="settings_feed_pagination_section">Home pagination</string>
+    <string name="settings_feed_pagination_description">Applies when you scroll and load the next home page. Does not change how one API response is parsed.</string>
+    <string name="settings_feed_api_mapping_section">Duplicate content IDs</string>
+    <string name="settings_feed_api_mapping_description">When repeat section rows is off, this also applies while merging the next page into the same sections so behavior stays consistent.</string>
+    <string name="settings_repeat_sections_title">Repeat section rows on next page</string>
+    <string name="settings_repeat_sections_subtitle">When on, each loaded page adds a new copy of every section block. When off, new items are merged into the same sections as the first page.</string>
+    <string name="settings_dedupe_api_title">Deduplicate in API mapping</string>
+    <string name="settings_dedupe_api_subtitle">When on, each section drops duplicate content IDs (per page and, if rows are merged, across the scroll merge). When off, the server order is kept even if IDs repeat.</string>
+
+</resources>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="settings_title">الإعدادات</string>
+    <string name="settings_back_cd">رجوع</string>
+    <string name="settings_theme_section">المظهر</string>
+    <string name="settings_theme_description">اختر طريقة عرض تطبيق ثمانيه على هذا الجهاز.</string>
+    <string name="settings_theme_system">النظام</string>
+    <string name="settings_theme_light">فاتح</string>
+    <string name="settings_theme_dark">داكن</string>
+    <string name="settings_language_section">اللغة</string>
+    <string name="settings_language_description">كل النصوص في التطبيق ستظهر باللغة التي تختارها فقط.</string>
+    <string name="settings_language_ar_title">العربية</string>
+    <string name="settings_language_ar_subtitle">واجهة ومحتوى بالعربية</string>
+    <string name="settings_language_en_title">English</string>
+    <string name="settings_language_en_subtitle">واجهة بالإنجليزية</string>
+    <string name="settings_about_section">حول التطبيق</string>
+    <string name="settings_about_app_name">نموذج ثمانيه</string>
+    <string name="settings_about_body">عينة استكشاف عربية أولًا مبنية بـ Compose و Hilt و DataStore.</string>
+    <string name="settings_feed_pagination_section">ترقيم الصفحة الرئيسية</string>
+    <string name="settings_feed_pagination_description">يُطبَّق عند تحميل الصفحة التالية أثناء التمرير. لا يغيّر طريقة تحليل استجابة واحدة من الخادم.</string>
+    <string name="settings_feed_api_mapping_section">معرّفات المحتوى المكررة</string>
+    <string name="settings_feed_api_mapping_description">عند إيقاف تكرار صفوف الأقسام، يُطبَّق هذا الإعداد أيضًا أثناء دمج الصفحة التالية في نفس الأقسام ليظل السلوك متسقًا.</string>
+    <string name="settings_repeat_sections_title">تكرار صفوف الأقسام عند الصفحة التالية</string>
+    <string name="settings_repeat_sections_subtitle">عند التفعيل، تُضاف نسخة جديدة من كل قسم مع كل صفحة. عند الإيقاف، تُدمج عناصر الصفحات التالية في نفس أقسام الصفحة الأولى.</string>
+    <string name="settings_dedupe_api_title">إزالة التكرار عند قراءة الاستجابة</string>
+    <string name="settings_dedupe_api_subtitle">عند التفعيل، تُزال عناصر بنفس المعرّف داخل كل قسم (لكل صفحة، وعند دمج الصفحات أثناء التمرير إذا لم تُكرَّر صفوف الأقسام). عند الإيقاف، يُحافَظ على ترتيب الخادم حتى مع تكرار المعرّفات.</string>
+</resources>
