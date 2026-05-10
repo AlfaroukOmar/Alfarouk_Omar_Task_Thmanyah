@@ -1,5 +1,6 @@
 package com.thmanyah.data.repository.home
 
+import com.thmanyah.core.common.di.SettingsRepository
 import com.thmanyah.core.common.dispatcher.IoDispatcher
 import com.thmanyah.core.network.connectivity.ConnectivityObserver
 import com.thmanyah.core.network.connectivity.ConnectivityStatus
@@ -29,6 +30,7 @@ import javax.inject.Singleton
 class HomePaginator @Inject constructor(
     private val api: HomeApi,
     private val mapper: SectionMapper,
+    private val settingsRepository: SettingsRepository,
     @IoDispatcher private val io: CoroutineDispatcher,
     connectivityObserver: ConnectivityObserver,
 ) {
@@ -69,7 +71,7 @@ class HomePaginator @Inject constructor(
         }
         when (result) {
             is AppResult.Success -> {
-                val dedupeWhenMapping =true //TODO get from setting later
+                val dedupeWhenMapping = settingsRepository.dedupeContentIdsWhenMapping.first()
                 val sections = mapper.mapPage(result.data, dedupeWhenMapping)
                 val totalPages = result.data.pagination?.total_pages?.takeIf { it > 0 } ?: 1
                 _state.value = HomeFeedState(
@@ -112,8 +114,8 @@ class HomePaginator @Inject constructor(
 
         when (result) {
             is AppResult.Success -> {
-                val dedupeWhenMapping = true //TODO get from setting later
-                val repeatHomeSectionsOnNextPage = true //TODO get from setting later
+                val dedupeWhenMapping =settingsRepository.dedupeContentIdsWhenMapping.first()
+                val repeatHomeSectionsOnNextPage = settingsRepository.repeatHomeSectionsOnNextPage.first()
                 val incoming = mapper.mapPage(result.data, dedupeWhenMapping)
                 val combined = if (repeatHomeSectionsOnNextPage) {
                     HomeFeedMerger.appendPagedSections(current.sections, incoming, nextPage)
@@ -150,7 +152,7 @@ class HomePaginator @Inject constructor(
         }
         when (result) {
             is AppResult.Success -> {
-                val dedupeWhenMapping = true //TODO get from setting later
+                val dedupeWhenMapping =settingsRepository.dedupeContentIdsWhenMapping.first()
                 val sections = mapper.mapPage(result.data, dedupeWhenMapping)
                 val totalPages = result.data.pagination?.total_pages?.takeIf { it > 0 } ?: 1
                 _state.value = HomeFeedState(

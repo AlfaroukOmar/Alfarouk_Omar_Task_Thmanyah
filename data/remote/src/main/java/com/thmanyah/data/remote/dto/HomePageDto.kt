@@ -8,6 +8,7 @@ import kotlinx.serialization.json.JsonElement
 
 
 @InternalSerializationApi
+@Serializable
 data class HomePageDto(
     val sections: List<SectionDto> = emptyList(),
     val pagination: PaginationDto? = null,
