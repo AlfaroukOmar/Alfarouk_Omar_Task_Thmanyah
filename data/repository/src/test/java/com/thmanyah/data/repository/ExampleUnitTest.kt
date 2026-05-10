@@ -1,4 +1,4 @@
-package com.thmanyah.alfarouk
+package com.thmanyah.data.repository
 
 import org.junit.Test
 
