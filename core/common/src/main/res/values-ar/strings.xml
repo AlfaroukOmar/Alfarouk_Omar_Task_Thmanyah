@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="error_no_internet">تعذر الاتصال بالإنترنت</string>
+    <string name="error_timeout">انتهت مهلة الاتصال</string>
+    <string name="error_server">الخادم غير متاح حاليًا</string>
+    <string name="error_unknown">حدث خطأ غير متوقع</string>
+</resources>

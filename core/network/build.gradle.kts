@@ -8,7 +8,7 @@ plugins {
 }
 
 android {
-    namespace = "com.thunder.core.network"
+    namespace = "com.thmanyah.core.network"
     compileSdk = 37
     defaultConfig { minSdk = 24 }
     compileOptions {

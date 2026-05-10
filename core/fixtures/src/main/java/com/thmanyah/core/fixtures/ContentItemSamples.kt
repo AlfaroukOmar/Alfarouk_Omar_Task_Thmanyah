@@ -10,10 +10,10 @@ import kotlinx.datetime.LocalDate
 object ContentItemSamples {
 
     private val sampleImages = listOf(
-        "https://picsum.photos/seed/thunder-a/400/400",
-        "https://picsum.photos/seed/thunder-b/400/400",
-        "https://picsum.photos/seed/thunder-c/400/400",
-        "https://picsum.photos/seed/thunder-d/400/400",
+        "https://picsum.photos/seed/alfarouk-a/400/400",
+        "https://picsum.photos/seed/alfarouk-b/400/400",
+        "https://picsum.photos/seed/alfarouk-c/400/400",
+        "https://picsum.photos/seed/alfarouk-d/400/400",
     )
 
     fun podcast(
@@ -179,7 +179,7 @@ object HomeSectionSamples {
                 id = "ep-grid-5",
                 title = "حلقة خمس",
                 durationSeconds = 2100L,
-                imageUrl = "https://picsum.photos/seed/thunder-c/400/400",
+                imageUrl = "https://picsum.photos/seed/alfarouk-c/400/400",
             ),
             ContentItemSamples.episode(
                 id = "ep-grid-6",

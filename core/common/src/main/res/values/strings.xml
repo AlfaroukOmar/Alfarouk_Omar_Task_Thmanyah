@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="error_no_internet">No internet connection</string>
+    <string name="error_timeout">Connection timed out</string>
+    <string name="error_server">Server is currently unavailable</string>
+    <string name="error_unknown">Something went wrong</string>
+</resources>
