@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="search_placeholder">Search podcasts, episodes, audiobooks…</string>
+    <string name="search_idle_title">Start typing to search</string>
+    <string name="search_clear_cd">Clear</string>
+    <string name="search_back_cd">Back</string>
+    <string name="search_icon_cd">Search</string>
+    <string name="search_title">Search</string>
+    <string name="search_no_results">No results</string>
+</resources>
