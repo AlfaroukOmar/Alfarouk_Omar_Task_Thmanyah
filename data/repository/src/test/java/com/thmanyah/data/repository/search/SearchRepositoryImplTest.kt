@@ -1,6 +1,7 @@
 package com.thmanyah.data.repository.search
 
 import com.google.common.truth.Truth.assertThat
+import com.thmanyah.core.common.di.SettingsRepository
 import com.thmanyah.data.remote.api.SearchApi
 import com.thmanyah.data.remote.dto.SearchResponseDto
 import com.thmanyah.data.remote.dto.SectionDto
@@ -25,6 +26,9 @@ import kotlin.jvm.java
 class SearchRepositoryImplTest {
 
     private val mapper = SectionMapper()
+    private val settings = mockk<SettingsRepository>().also {
+        every { it.dedupeContentIdsWhenMapping } returns flowOf(true)
+    }
 
 
     @OptIn(InternalSerializationApi::class)
@@ -46,7 +50,7 @@ class SearchRepositoryImplTest {
             ),
         )
         coEvery { api.search("q") } returns SearchResponseDto(sections = listOf(dto))
-        val repo = SearchRepositoryImpl(api, mapper, Dispatchers.Unconfined)
+        val repo = SearchRepositoryImpl(api, mapper, settings,Dispatchers.Unconfined)
         val result = repo.search("q").first() as AppResult.Success
         assertThat(result.data).hasSize(1)
         assertThat(result.data.single().items).hasSize(1)
@@ -57,7 +61,7 @@ class SearchRepositoryImplTest {
     fun networkFailure_mapsNoInternet() = runTest {
         val api = mockk<SearchApi>()
         coEvery { api.search(any()) } throws IOException("boom")
-        val repo = SearchRepositoryImpl(api, mapper, Dispatchers.Unconfined)
+        val repo = SearchRepositoryImpl(api, mapper, settings,Dispatchers.Unconfined)
         val result = repo.search("q").first() as AppResult.Failure
         assertThat(result.error).isInstanceOf(AppError.NoInternet::class.java)
     }
