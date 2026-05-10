@@ -1,10 +1,10 @@
 package com.thmanyah.data.remote.mapper
 
-import com.thmanyah.core.commen.extensions.isValidHttpUrl
-import com.thmanyah.core.commen.extensions.orEmptyTrimmed
-import com.thmanyah.core.commen.extensions.parseReleaseDate
-import com.thmanyah.core.commen.extensions.toIntSafe
-import com.thmanyah.core.commen.extensions.toLongSafe
+import com.thmanyah.core.common.extensions.isValidHttpUrl
+import com.thmanyah.core.common.extensions.orEmptyTrimmed
+import com.thmanyah.core.common.extensions.parseReleaseDate
+import com.thmanyah.core.common.extensions.toIntSafe
+import com.thmanyah.core.common.extensions.toLongSafe
 import com.thmanyah.data.remote.dto.HomePageDto
 import com.thmanyah.data.remote.dto.SectionDto
 import com.thmanyah.domain.entities.ContentItem
