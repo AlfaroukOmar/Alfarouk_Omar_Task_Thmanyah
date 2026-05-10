@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="home_search_cd">Search</string>
+    <string name="home_settings_cd">Open settings</string>
+    <string name="offline_banner">Unable to connect to the internet</string>
+    <string name="greeting_morning">Good morning</string>
+    <string name="greeting_evening">Good evening</string>
+    <string name="greeting_evening_named">Good evening, %1$s</string>
+    <string name="home_display_name">Alfarouk Omar</string>
+    <string name="developer_name">Alfarouk Omar</string>
+    <string name="chip_for_you">For you</string>
+    <string name="chip_podcasts">Podcasts</string>
+    <string name="chip_episodes">Episodes</string>
+    <string name="chip_audio_articles">Audio articles</string>
+    <string name="chip_books">Books</string>
+    <string name="chip_other">Other</string>
+    <string name="avatar_content_description">Profile photo</string>
+    <string name="home_empty">No content</string>
+    <string name="home_empty_filter">No sections for this filter</string>
+    <string name="retry">Retry</string>
+</resources>

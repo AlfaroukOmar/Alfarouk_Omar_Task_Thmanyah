@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="home_search_cd">بحث</string>
+    <string name="home_settings_cd">فتح الإعدادات</string>
+    <string name="offline_banner">تعذر الاتصال بالإنترنت</string>
+    <string name="greeting_morning">صباح الخير</string>
+    <string name="greeting_evening">مساء الخير</string>
+    <string name="greeting_evening_named">مساء الخير، %1$s</string>
+    <string name="home_display_name">الفاروق عمر</string>
+    <string name="developer_name">الفاروق عمر</string>
+    <string name="chip_for_you">لك</string>
+    <string name="chip_podcasts">البودكاست</string>
+    <string name="chip_episodes">الحلقات</string>
+    <string name="chip_audio_articles">المقالات الصوتية</string>
+    <string name="chip_books">الكتب</string>
+    <string name="chip_other">أخرى</string>
+    <string name="avatar_content_description">صورة الملف الشخصي</string>
+    <string name="home_empty">لا يوجد محتوى</string>
+    <string name="home_empty_filter">لا أقسام لهذا التصفية</string>
+    <string name="retry">إعادة المحاولة</string>
+</resources>
