@@ -17,8 +17,8 @@ android {
         consumerProguardFiles("consumer-rules.pro")
     }
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_11
-        targetCompatibility = JavaVersion.VERSION_11
+        sourceCompatibility = JavaVersion.VERSION_17
+        targetCompatibility = JavaVersion.VERSION_17
     }
 
 }
@@ -26,6 +26,7 @@ android {
 dependencies {
     implementation(project(":domain"))
     implementation(project(":core:common"))
+    implementation(project(":core:fixtures"))
     implementation(project(":core:network"))
     implementation(project(":data:remote"))
 
