@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="section_title_podcast">البودكاست</string>
+    <string name="section_title_episode">الحلقات</string>
+    <string name="section_title_audiobook">الكتب</string>
+    <string name="section_title_audio_article">المقالات الصوتية</string>
+
+    <string name="retry">إعادة المحاولة</string>
+    <string name="end_of_feed">لا مزيد من المحتوى</string>
+
+    <string name="duration_hours_minutes">%1$d س %2$d د</string>
+    <string name="duration_hours_only">%1$d س</string>
+    <string name="duration_minutes_only">%1$d د</string>
+    <string name="meta_separator"> · </string>
+    <string name="dash_placeholder">—</string>
+
+    <string name="relative_today">اليوم</string>
+    <string name="relative_yesterday">أمس</string>
+    <string name="relative_two_days_ago">أول أمس</string>
+
+    <plurals name="relative_days_ago">
+        <item quantity="zero">منذ %d يوم</item>
+        <item quantity="one">منذ يوم</item>
+        <item quantity="two">منذ يومين</item>
+        <item quantity="few">منذ %d أيام</item>
+        <item quantity="many">منذ %d يومًا</item>
+        <item quantity="other">منذ %d يوم</item>
+    </plurals>
+
+    <plurals name="episodes_count_label">
+        <item quantity="zero">%d حلقات</item>
+        <item quantity="one">حلقة واحدة</item>
+        <item quantity="two">حلقتان</item>
+        <item quantity="few">%d حلقات</item>
+        <item quantity="many">%d حلقة</item>
+        <item quantity="other">%d حلقة</item>
+    </plurals>
+</resources>

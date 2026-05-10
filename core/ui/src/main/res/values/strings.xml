@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="section_title_podcast">Podcasts</string>
+    <string name="section_title_episode">Episodes</string>
+    <string name="section_title_audiobook">Books</string>
+    <string name="section_title_audio_article">Audio articles</string>
+
+    <string name="retry">Retry</string>
+    <string name="end_of_feed">You are all caught up</string>
+
+    <string name="duration_hours_minutes">%1$dh %2$dm</string>
+    <string name="duration_hours_only">%1$dh</string>
+    <string name="duration_minutes_only">%1$dm</string>
+    <string name="meta_separator"> · </string>
+    <string name="dash_placeholder">—</string>
+
+    <string name="relative_today">Today</string>
+    <string name="relative_yesterday">Yesterday</string>
+    <string name="relative_two_days_ago">Day before yesterday</string>
+
+    <plurals name="relative_days_ago">
+        <item quantity="one">%d day ago</item>
+        <item quantity="other">%d days ago</item>
+    </plurals>
+
+    <plurals name="episodes_count_label">
+        <item quantity="one">%d episode</item>
+        <item quantity="other">%d episodes</item>
+    </plurals>
+</resources>
